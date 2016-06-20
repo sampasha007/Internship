@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+ <link rel="stylesheet" href="formcss.css" >
+</head>
+
+<body>
+
+    
+    <br/>
+    <br/>
+    
+    <form id="MyForm" method = "post" action ="dbcon.php">
+        <fieldset> 
+        <legend>INTERNSHIP REGISTRATION</legend>
+        First Name:
+        <input type="text" name="fname" required pattern="[A-Za-z]{2,30}" title="Enter Characters">
+        <br/>
+        <br/>Last Name:
+        <input type="text" name="lname" required pattern="[A-Za-z]{2,30}" title="Enter Characters" >
+        <br/>
+        <br/>DOB:
+        <input type="date" name="dob" required>
+        <br/>
+        <br/>Password: <input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+        <br/>
+        <br/>Gender:
+        <input type="radio" name="gen" value="male">Male
+        <input type="radio" name="gen" value="female">Female
+        <br/>
+        <br/>Email:
+        <input type="email" name="url" required>
+        <br/>
+        <br/>Primary Phone No.:
+        <input type="text" name="one" pattern="[0-9]{10}" title="Enter 10 digit number">
+        <br/>
+        <br/>Secondary Phone No. :
+        <input type="text" name="two" pattern="[0-9]{10}"  title="Enter 10 digit number">
+        <br/>
+        <br/>Highest Level Of Graduation:
+        <select name="grad_lvl" required>
+            <option value="ten" selected>Tenth standard</option>
+            <option value="twelve">Twelfth standard</option>
+            <option value="ug">UG</option>
+            <option value="pg">PG</option>
+            <option value="phd">PHD</option>
+            <option value="pdf">PDF</option>
+        </select>
+        <br/>
+        <br/>Experience in:
+        
+        <input type="checkbox" name="exp[]" value="Android">Android
+        <input type="checkbox" name="exp[]" value="Windows">Windows
+        <input type="checkbox" name="exp[]" value="IOS">IOS
+        <br/>
+        <br/>
+            <div class ="input-validation"></div>
+            <center>
+        <input type="submit" name = "sub" value="Submit"></center>
+            </fieldset>
+    </form>
+    
+</body>
+
+</html>

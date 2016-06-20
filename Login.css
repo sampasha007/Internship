@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+#Loginform
+{ 
+  background-color: #ffa500;
+  text-align: center;
+  font-family:'Fjalla One', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    
+    position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+
+}
+body
+{
+    background-color: #ff5500;
+}
+
+.userdetails
+{
+    background-color: #ffa500;
+  text-align: center;
+  font-family:'Fjalla One', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    
+    position: relative;
+  top: 40%;
+    text-decoration: none;
+  transform: translateY(-50%);
+}
+.userdetails a
+{
+      font-family:'Fjalla One', sans-serif;
+     text-decoration: none;
+}
+.userdetails a:hover
+{
+      font-family:'Fjalla One', sans-serif;
+     color: #000099;
+}
+.welcome
+{
+    text-align: center;
+    font-family:'Fjalla One', sans-serif;
+    font-size: 40px;
+    color: #0000aa;
+}
